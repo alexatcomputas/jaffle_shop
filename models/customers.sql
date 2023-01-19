@@ -1,29 +1,12 @@
-{{
-  config(
-    materialized='view'
-  )
-}}
-
 with customers as (
 
-    select
-        id as customer_id,
-        first_name,
-        last_name
-
-    from `cx-datalab`.dbt_alei2.raw_customers
+    select * from {{ ref('stg_customers') }}
 
 ),
 
 orders as (
 
-    select
-        id as order_id,
-        customer as customer_id,
-        ordered_at as order_date
-        --,status
-
-    from `cx-datalab`.dbt_alei2.raw_orders
+    select * from {{ ref('stg_orders') }}
 
 ),
 
