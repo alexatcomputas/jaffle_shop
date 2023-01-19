@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Welcome to your new dbt project!
 
 ### Using the starter project
@@ -13,3 +14,7 @@ Try running the following commands:
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+=======
+# jaffle_shop
+dbt intro project
+>>>>>>> a93c49a8266d7d0b79bf3c827253c67edeb59c9a
