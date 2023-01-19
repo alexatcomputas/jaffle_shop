@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Welcome to your new dbt project!
 
 ### Using the starter project
@@ -17,4 +16,3 @@ Try running the following commands:
 =======
 # jaffle_shop
 dbt intro project
->>>>>>> a93c49a8266d7d0b79bf3c827253c67edeb59c9a
