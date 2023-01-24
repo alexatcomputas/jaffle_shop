@@ -1,0 +1,22 @@
+with customers as (
+
+    select * from {{ ref('stg_customers') }}
+
+),
+
+orders as (
+
+    select * from {{ ref('stg_orders') }}
+
+)
+
+{% set cols = dbtplyr.get_column_names( ref('stg_orders') ) %}
+{% set cols_c = dbtplyr.starts_with('c', cols) %}
+
+select
+   *,
+   {{cols_c}}
+from customers
+left join
+   orders
+      on customer_id = customer_id
